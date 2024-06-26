@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-    <!-- Brevo Conversations {literal} -->
-    <script>
+    <title>chat widget test</title>
+<!--      <script>
+          window.ChatraSetup = {
+              onNewMessage: function(message) {
+                  console.log('New message:', message);
+              }
+          };
+      </script>-->
+      <!-- Brevo Conversations {literal} -->
+      <script>
+          (function(d, w, c) {
+              w.BrevoConversationsID = '6622847f14a1da715c659e47';
+              w[c] = w[c] || function() {
+                  (w[c].q = w[c].q || []).push(arguments);
+              };
+              var s = d.createElement('script');
+              s.async = true;
+              s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+              if (d.head) d.head.appendChild(s);
+          })(document, window, 'BrevoConversations');
+      </script>
+      <!-- /Brevo Conversations {/literal} -->
+    <!-- Chatra {literal} -->
+<!--    <script>
       (function(d, w, c) {
-          w.BrevoConversationsID = '6622847f14a1da715c659e47';
+          w.ChatraID = 'EEjyNkR2XxcWvoLsd';
+          var s = d.createElement('script');
           w[c] = w[c] || function() {
               (w[c].q = w[c].q || []).push(arguments);
           };
-          var s = d.createElement('script');
           s.async = true;
-          s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+          s.src = 'https://call.chatra.io/chatra.js';
           if (d.head) d.head.appendChild(s);
-      })(document, window, 'BrevoConversations');
-    </script>
-    <!-- /Brevo Conversations {/literal} -->
+      })(document, window, 'Chatra');
+    </script>-->
+    <!-- /Chatra {/literal} -->
   </head>
   <body>
     <div id="app"></div>
