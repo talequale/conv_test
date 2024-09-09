@@ -1,11 +1,12 @@
 <script setup>
-//import Obj from './components/Obj.vue'
+  import Obj from './components/Obj.vue'
 </script>
 
 <template>
+  <div id="app">
   <header>
 
-    <div id="app">
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Home</a>
@@ -25,14 +26,15 @@
           </div>
         </div>
       </nav>
-      <router-view />
-    </div>
-    
+
+
+
   </header>
 
   <main>
-
+<!--    <Obj></Obj>-->
   </main>
+  </div>
 </template>
 
 <style scoped>
