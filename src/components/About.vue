@@ -2,7 +2,7 @@
   <div class="about">
     <h1>About Us</h1>
     <p>Here we are</p>
-    <button onclick="Chatra('openChat', true)">Chat with us</button>
+<!--    <button onclick="Chatra('openChat', true)">Chat with us</button>-->
   </div>
 </template>
 
